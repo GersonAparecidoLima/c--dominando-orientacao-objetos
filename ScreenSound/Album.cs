@@ -1,5 +1,4 @@
-﻿namespace ScreenSound.Modelos
-{ 
+﻿namespace ScreenSound.Modelos;
 class Album
 {
     private List<Musica> musicas = new List<Musica>();
@@ -27,5 +26,4 @@ class Album
         }
         Console.WriteLine($"\nPara ouvir este álbum inteiro você precisa de {DuracaoTotal}");
     }
-}
 }
