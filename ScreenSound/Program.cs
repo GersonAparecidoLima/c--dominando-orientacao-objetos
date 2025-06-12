@@ -1,14 +1,14 @@
 ﻿using ScreenSound.Modelos;
 
 Banda vozDaVerdade = new Banda("Voz Da Verdade");
-vozDaVerdade.AdicionarNota(10);
-vozDaVerdade.AdicionarNota(8);
-vozDaVerdade.AdicionarNota(6);
+vozDaVerdade.AdicionarNota(new Avaliacao(10));
+vozDaVerdade.AdicionarNota(new Avaliacao(8));
+vozDaVerdade.AdicionarNota(new Avaliacao(6));
 
 Banda dianteDoTrono = new("Diante Do Trono ");
-dianteDoTrono.AdicionarNota(10);
-dianteDoTrono.AdicionarNota(8);
-dianteDoTrono.AdicionarNota(6);
+dianteDoTrono.AdicionarNota(new Avaliacao(10));
+dianteDoTrono.AdicionarNota(new Avaliacao(8));
+dianteDoTrono.AdicionarNota(new Avaliacao(6));
 
 Dictionary<string, Banda > bandasRegistradas = new ();
 bandasRegistradas.Add(vozDaVerdade.Nome, vozDaVerdade);
@@ -149,12 +149,16 @@ void AvaliarUmaBanda()
         //Pegando a banda registrada
         Banda banda = bandasRegistradas[nomeDaBanda];
         Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
-        int nota = int.Parse(Console.ReadLine()!);
+        //int nota = int.Parse(Console.ReadLine()!);
+
+        Avaliacao nota =  Avaliacao.Parse(Console.ReadLine()!);
+
+        //Avaliacao nota = Avaliacao.Parse(Console.ReadLine()!);
 
         banda.AdicionarNota(nota);
 
 
-        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
+        Console.WriteLine($"\nA nota {nota.Nota} foi registrada com sucesso para a banda {nomeDaBanda}");
         Thread.Sleep(2000);
         Console.Clear();
         ExibirOpcoesDoMenu();
