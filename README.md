@@ -1,3 +1,5 @@
+
+
 # 🧠 C# - Dominando Orientação a Objetos
 
 Este repositório contém os estudos, exercícios e práticas realizados durante o curso **"C#: Dominando Orientação a Objetos"**, oferecido pela [Alura](https://www.alura.com.br/).
@@ -27,7 +29,8 @@ O curso tem como objetivo aprofundar os conhecimentos em programação orientada
 - [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
 - [.NET](https://dotnet.microsoft.com/)
 - Visual Studio
-
+## Certificado do Curso
+![Certificado](https://github.com/GersonAparecidoLima/c--dominando-orientacao-objetos/raw/master/Certificado/Certificado.PNG)
 ---
 
 ## 📁 Estrutura do Repositório
